@@ -1,178 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Projeto Copa do mundo</title>
+
+    <link rel="icon" type="image.png" href="Bola.png">
+
 </head>
 <body>
-    <h1 align="center">Cadastro de Funcionários</h1>
+
+    <h1 align="Center" id="topo">Copa do mundo fifa 2026</h1>
     <hr>
 
-    <form>
+    <img src="Logofifa.png" align="center" id="Center" width="200" alt="Logofifa">
 
-        <fieldset>
-            <legend>Dados Pessoais</legend>
-            <!--NOME-->
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome" size="40" 
-            maxlength="35" minlength="5" required placeholder="Digite seu nome completo sem abreviações">
+   
+    <p>
+        <a href="contato.html">Ir para Contato</a>
+    </p>
 
-            <br><br>
-            <!--IDADE-->
-            <label for="idade">Idade:</label><br>
-            <input type="number" name="idade" id="idade" min="18" max="50"><br>
-            <small>(Min 18)</small>
+    <!-- Âncora -->
+    <p>
+        <a href="#final">Ir para o final da página</a>
+    </p>
 
-            <br><br>
-            <!--SEXO-->
-            <label for="Sexo">Sexo:</label><br>
-            <input type="radio" name="Sexo" id="" value="F"> F
-            <input type="radio" name="Sexo" id="" value="M" checked> M
+    <!-- Lista -->
+    <h2>Lista de jogos do brasil</h2>
+    <ul>
+        <li>Brasil x Marrocos</li>
+        <li>Brasil x Haiti</li>
+        <li>Brasil x Escócia</li>
+    </ul>
 
-            <br><br>
-            <!--DATA DE NASCIMENTO-->
-            <label for="nascimento">Data de nascimento:</label>
-            <br>
-            <input type="date" name="nascimento" id="nascimento" required>
+    <!-- Tabela -->
+    <h2>Data e horário dos jogos</h2>
 
-            <br><br>
-            <!--ARQUIVO-->
-            <label for="foto">Foto:</label>
-            <br>
-            <input type="file" name="foto" id="foto" accept=".html , .css , .pdf">
-
-            <br><br>
-            <!--LOGIN-->
-            <label for="login">Login</label>
-            <br>
-            <input type="text" name="login" id="login" size="15" maxlength="10" required disabled>
-
-            <br><br>
-            <!--SENHA-->
-            <label for="">Senha</label>
-            <br>
-            <input type="password" name="Senha" id="Senha" size="15" minlength="3" maxlength="10" required>
-
-        </fieldset>
-        
-        <fieldset>
-            <legend><b><small>Dados profissionais</small></b></legend>
-
-            <label for="cargo">Cargo</label>
-            <br>
-            <input type="text" name="cargo" id="cargo" value="Professor(a)" readonly>
-
-            <br><br>
-
-            <label for="Periodo">Periodo de Trabalho:</label>
-            <input type="checkbox" name="" id="Manhã"> Manhã
-            <input type="checkbox" name="" id="Tarde"> Tarde
-            <input type="checkbox" name="" id="Noite" checked> Noite
-
-            <br><br>
-
-            <label for="cor">Cor do Uniforme:</label><br>
-            <input type="color" name="cor" id="cor">
-
-            <br><br>
-            <label for="Capacidade">Quanto você se sente preparado para esta função</label><br>
-
-            0 <input type="range" name="Capacidade" id="Capacidade" min="0" max="10" value="10"> 10
-
-            <br><br>
-        <label for="Capacidade">Curso:</label>
-        <select>
-        <option ></option> <!--PLACEHOLDER-->
-        <option >Agrimensura</option>
-        <option >Des. Sistemas</option>
-        <option >Enfermagem</option>
-        <option >Mecânica</option>
-        <option >Qualidade</option>
-        <option >Administração</option>
-        <option >Edificações</option>
-        <option >Prot. Dentária</option>
-
-        </select>
-
-        <br><br>
-        <label for="disciplinas">Disciplina Favorita: </label>
+    <table border="1">
         <br>
-        <select id="disciplinas" name="disciplinas" size="6" multiple>
-        <option >Banco de Dados</option>
-        <option >Fundamentos de informática</option>
-        <option >Lógica de Programação</option>
-        <option >DAW</option>
-        <option >Projeto Integrador</option>
-        <option >Linguagem Multiplataforma</option>
-        </select>
+        <i>O horário dos jogos pode ser afetado por conta do clima no estádio</i>
         <br>
-        <small><i>Para selocionar várias opções utilize ctrl+click</i></small>
-        <br><br>
+        <tr>
+            <th>Data e horário</th>
+            <th>Jogo</th>
+        </tr>
 
-        <label for="formacao">Formação</label>
-        <select id="formacao" name="formacao">
+        <tr>
+            <td>13/06 - 19:00</td>
+            <td>Brasil x Marrocos</td>
+        </tr>
 
-            <optgroup label="Graduação">
-        <option>Engenharia</option>
-        <option >Biológicas</option>
-        <option >Exatas</option>
-        <option >Humanas</option>
-        <option >Tecnologia</option>
-            </optgroup>
-            <optgroup label="Pós-Graduação">
-                <option >Mestrado</option>
-                <option >Doutorado</option>
-                <option >Pós-Doc</option>
-            </optgroup>
-        </select>
-        <label for="conhecimento">Conhecimento</label>
-        <input type="text" id="conhecimento" name="conhecimento"
-               list="lista-conhecimentos">
+        <tr>
+            <td>19/06 - 21:30</td>
+            <td>Brasil x Haiti</td>
+        </tr>
 
-            <datalist id="lista-conhecimento">
-                <option value="HTML5">HTML5</option>
-                <option value="C#">C#</C></option>
-                <option value="CSS3">CSS3</option>
-                <option value="PHP">JavaScript</option>
-                <option value="JAVA">JAVA</option>
+        <tr>
+            <td>24/06 - 19:00</td>
+            <td>Brasil x Escócia</td>
+    </table>
 
-            </datalist>
+    <!-- Imagem -->
+    <h2>Estádio da estreia do brasil na copa do mundo</h2>
+    <h3>Metlife Stadium</h3>
+    <br>
 
-        </fieldset>
+    <img src="MetlifeStadium.jpeg" width="400" alt="Estádio metlife">
 
-        <fieldset>
-            <Legend><b>Datas</b></Legend>
+    <!-- Recurso extra HTML -->
+    <h2>Detalhes do estádio</h2>
 
-            <label for="dtCad">Data e Hora do Cadastro</label>
-            <input type="text" name="" id="">
-        </fieldset>
+    <details>
+        <summary>Clique para ver mais</summary>
+        <p>O MetLife Stadium é uma grandiosa arena multiuso localizada no Meadowlands Sports Complex em East Rutherford, Nova Jersey, a apenas 8 km de Manhattan, Nova York. Inaugurado em 2010, é a casa dos times New York Giants e New York Jets da NFL.</p>
+    </details>
 
-        <fieldset>
-        <legend><b>Contato</b></legend>
-        <label for="mensagem">Mensagem</label>
-        <br>
-        <textarea name="mensagem" id="mensagem" rows="4" cols="50">
+    <!-- Iframe (Mapa) -->
+    <h2>Localização</h2>
 
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.657915997509!2d-74.07703728786684!3d40.81351043127482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f861ad5902bf%3A0x8184280d31051734!2sMetLife%20Stadium!5e0!3m2!1spt-BR!2sbr!4v1781116025339!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </iframe>
 
-        </textarea>
+    <br><br><br><br><br><br>
 
-        <br><br>
-        <label for="email">E-mail</label>
-        <br>
-        <input type="email" name="email" id="email" required>
+    <h2 id="final">Final da Página</h2>
 
-        <br><br>
+    <a href="#topo">Voltar ao topo</a>
 
-        <label for="url">Site</label>
-        <input type="url" name="url" id="url" required>
-        </fieldset>
-
-        <br><br>
-        <input type="submit" name="btn1" value="Cadastrar">
-        <input type="reset" name="btn2" value="Limpar">
-        <input type="button" name="btn3" value="Clique aqui" onclick="alert('Olá, 👋 seja bem-vindo!')">
-        
-    </form>
 </body>
 </html>
